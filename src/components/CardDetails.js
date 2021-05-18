@@ -28,8 +28,6 @@ const CardDetails = () => {
         </div>
         <div className="row py-5 px-4">
             <div className="col-xl-4 col-md-6 col-sm-10 mx-auto">
-
-
                 <div className="bg-white shadow rounded overflow-hidden">
                     <div className="px-4 pt-0 pb-4 bg-dark">
                         <div className="media align-items-end profile-header">
@@ -46,7 +44,7 @@ const CardDetails = () => {
                     <div className="bg-light p-4 d-flex justify-content-end text-center">
                         <ul className="list-inline mb-0">
                             <li className="list-inline-item">
-                                <h5 className="font-weight-bold mb-0 d-block">{PHONE}</h5><small className="text-muted"> <i className="fa fa-phone-square mr-1"/>Photos</small>
+                                <h5 className="font-weight-bold mb-0 d-block">{PHONE}</h5><small className="text-muted"> <i className="fa fa-phone-square mr-1"/>Tel-No</small>
                             </li>
                             &nbsp;
                             <li className="list-inline-item">

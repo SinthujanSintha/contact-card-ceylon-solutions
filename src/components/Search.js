@@ -1,18 +1,19 @@
 import React, {useRef} from "react";
-
-const Search =(props)=>{
-    const inputElement=useRef("")
-    const getSearchTerm=()=>{
+import "./SearchBar.css"
+const Search = (props) => {
+    const inputElement = useRef("")
+    const getSearchTerm = () => {
         props.searchKeyword(inputElement.current.value)
     }
-    return(
+    return (
         <>
-                <input type="text" placeholder="Search Card"
-                       ref={inputElement}
-                       className="prompt" value={props.term}
-                       onChange={getSearchTerm}
-                />
-                <i className="search icon"/>
+            <div className="search-bar">
+                <input type="search" name="search" placeholder="Search Card Here" className="prompt" value={props.term}
+                       onChange={getSearchTerm} ref={inputElement} />
+                <button className="search-btn" type="submit">
+                    <span>Search</span>
+                </button>
+            </div>
         </>
     )
 }
