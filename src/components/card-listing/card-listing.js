@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {ContactData} from "../contacts.js";
-import {setCard} from "../redux/actions/cardAction"
-import Card from "./Card";
-import Search from "./Search";
+import {ContactData} from "../../contacts.js";
+import {setCard} from "../../redux/actions/cardAction"
+import Card from "../card/card";
+import SearchBar from "../search/search-bar";
 
 const CardListing = () => {
     const [searchTerm, setSearchTerm] = useState("")
@@ -30,20 +30,18 @@ const CardListing = () => {
         else{
             setSearchResults(cards)
         }
-
     }
     return (
         <section id="team" className="pb-5">
             <div className="container">
                 <h5 className="section-title h1">Contact Card</h5>
-                <Search term={searchTerm}
-                        searchKeyword={searchHandler}/>
+                <SearchBar term={searchTerm}
+                           searchKeyword={searchHandler}/>
                 <div className="row">
-                    <Card cards={searchTerm.length < 1? cards:searchResults}/>
+                    <Card cards={searchTerm.length < 1?cards:searchResults}/>
                 </div>
             </div>
         </section>
-
     )
 }
 

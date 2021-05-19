@@ -1,17 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-
-
 const Card = (props) => {
 
-    const cards=props.cards
+    const cards = props.cards
     const renderList = cards.map((card) => {
-        const {NAME, PHOTO, DESCRIPTION, PHONE, EMAIL,LOCATION,DOB} = card
+        const {NAME, PHOTO, DESCRIPTION, PHONE, EMAIL, LOCATION, DOB} = card
         return (
-
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <Link to={`/card/${PHONE}`}>
+            <div data-testid="card" className="col-xs-12 col-sm-6 col-md-4">
+                <Link to={`/card/${PHONE}`}>
                     <div className="image-flip">
                         <div className="mainflip flip-0">
                             <div className="frontside">
@@ -21,11 +18,13 @@ const Card = (props) => {
                                                 src={PHOTO}
                                                 alt={NAME}/></p>
                                         <h4 className="card-title">{NAME}</h4>
-                                        <p className="card-text"><i className="fa fa-phone-square mr-lg-1"/>&nbsp;{PHONE}</p>
+                                        <p className="card-text"><i
+                                            className="fa fa-phone-square mr-lg-1"/>&nbsp;{PHONE}</p>
                                         <p className="card-text"><i className="fa fa-envelope mr-1"/>&nbsp;{EMAIL}</p>
-                                        <p className="card-text"><i className="fa fa-map-marker mr-1"/>&nbsp;{LOCATION}</p>
-                                        <p className="card-text"><i className="fa fa-birthday-cake mr-1"/>&nbsp;{DOB}</p>
-
+                                        <p className="card-text"><i className="fa fa-map-marker mr-1"/>&nbsp;{LOCATION}
+                                        </p>
+                                        <p className="card-text"><i className="fa fa-birthday-cake mr-1"/>&nbsp;{DOB}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -65,9 +64,8 @@ const Card = (props) => {
                             </div>
                         </div>
                     </div>
-                    </Link>
-                </div>
-
+                </Link>
+            </div>
         )
     })
 
@@ -75,8 +73,6 @@ const Card = (props) => {
         <>
             {renderList}
         </>
-
-
     )
 }
 

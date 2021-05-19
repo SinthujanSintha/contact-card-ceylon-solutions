@@ -24,12 +24,3 @@ export const selectedCardReducer = (state = {}, { type, payload }) => {
             return state;
     }
 };
-
-export const searchCardsReducer = (state = {}, { type, payload }) => {
-    switch (type) {
-        case ActionTypes.SEARCH_CARD:
-            return { ...state, ...payload };
-        default:
-            return state;
-    }
-};

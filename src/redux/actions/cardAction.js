@@ -5,7 +5,6 @@ export const setCard = (cards) => {
         type: ActionTypes.SET_CARDS,
         payload: cards
     }
-
 }
 
 export const selectedCard = (card) => {
@@ -14,10 +13,3 @@ export const selectedCard = (card) => {
         payload: card,
     };
 };
-
-export const searchCard = (searchCards) => {
-    return {
-        type:ActionTypes.SEARCH_CARD,
-        payload:searchCards
-    }
-}

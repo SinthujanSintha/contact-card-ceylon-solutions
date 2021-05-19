@@ -1,9 +1,8 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom"
-import {selectedCardReducer} from "../redux/reducers/cardReducer";
-import "./CardDetails.css"
-import {selectedCard} from "../redux/actions/cardAction";
+import "./card-details.css"
+import {selectedCard} from "../../redux/actions/cardAction";
 
 const CardDetails = () => {
     const {cardId} = useParams()
@@ -40,7 +39,6 @@ const CardDetails = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="bg-light  p-4 d-flex justify-content-end text-center">
                         <ul className="list-inline mb-0">
                             <li className="list-inline-item">
@@ -52,8 +50,6 @@ const CardDetails = () => {
                             </li>
                         </ul>
                     </div>
-
-
                     <div className="py-4 bg-light rounded shadow-sm">
                         <h5 className="mb-0 ml-4">About me</h5>
                         <div className="p-4 bg-light rounded shadow-sm">
@@ -63,11 +59,8 @@ const CardDetails = () => {
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 )
 }
-
 export default CardDetails

@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
-import "./SearchBar.css"
-const Search = (props) => {
+import "./search-bar.css"
+
+const SearchBar = (props) => {
     const inputElement = useRef("")
     const getSearchTerm = () => {
         props.searchKeyword(inputElement.current.value)
@@ -18,4 +19,4 @@ const Search = (props) => {
     )
 }
 
-export default Search
+export default SearchBar
