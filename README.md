@@ -14,5 +14,5 @@ Please Clone the project and install the all depencies which needed.
 
 After that type the  following commands in the terminal
 
-###`npm start`
+`npm start`
 
