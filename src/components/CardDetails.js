@@ -41,25 +41,25 @@ const CardDetails = () => {
                         </div>
                     </div>
 
-                    <div className="bg-light p-4 d-flex justify-content-end text-center">
+                    <div className="bg-light  p-4 d-flex justify-content-end text-center">
                         <ul className="list-inline mb-0">
                             <li className="list-inline-item">
-                                <h5 className="font-weight-bold mb-0 d-block">{PHONE}</h5><small className="text-muted"> <i className="fa fa-phone-square mr-1"/>Tel-No</small>
+                                <h5 className="font-weight-bold mt-5 d-block">{PHONE}</h5><small className="text-muted"> <i className="fa fa-phone-square mr-1"/>Tel-No</small>
                             </li>
-                            &nbsp;
+                            &nbsp;&nbsp;
                             <li className="list-inline-item">
-                                <h5 className="font-weight-bold mb-0 d-block">{EMAIL}</h5><small className="text-muted"> <i className="fa fa-envelope mr-1"/>Email</small>
+                                <h5 className="font-weight-bold mt-5 d-block">{EMAIL}</h5><small className="text-muted"> <i className="fa fa-envelope mr-1"/>Email</small>
                             </li>
                         </ul>
                     </div>
 
 
                     <div className="py-4 bg-light rounded shadow-sm">
-                        <h5 className="mb-3">About me</h5>
+                        <h5 className="mb-0 ml-4">About me</h5>
                         <div className="p-4 bg-light rounded shadow-sm">
                             <p className="font-italic mb-0">{DESCRIPTION}</p>
-                            <a href="/" className="btn btn-dark btn-sm btn-block">Back To Home</a>
                         </div>
+                        <a href="/" className="btn btn-dark btn-sm btn-block">Back To Home</a>
                     </div>
                 </div>
             </div>

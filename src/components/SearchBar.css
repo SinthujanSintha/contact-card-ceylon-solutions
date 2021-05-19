@@ -17,22 +17,12 @@ input {
 }
 
 .search-bar input,
-.search-btn,
-.search-btn:before,
-.search-btn:after {
-    transition: all 0.25s ease-out;
-}
-.search-bar input,
 .search-btn {
     width: 3em;
     height: 3em;
 }
-.search-bar input:invalid:not(:focus),
-.search-btn {
-    cursor: pointer;
-}
+
 .search-bar,
-.search-bar input:focus,
 .search-bar input:valid  {
     width: 100%;
 }
